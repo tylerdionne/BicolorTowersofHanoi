@@ -1,7 +1,6 @@
 # Tyler Dionne
-# CSE 4081
-# Midterm
-# The Two Towers
+# Bi-Color Towers of Hanoi
+
 import sys
 import math
 def tower(n):
@@ -55,11 +54,7 @@ def main():
     # n pairs of disks so 2n discs total
     n = n * 2 
     moves = tower(n)
-    '''
-    print(f"{orign}")
-    for move in moves:
-        print(f"{move}")
-    '''
+
     with open(towersout, 'w') as outfile:
         moves = tower(n)
         outfile.write(f"{orign}\n")
